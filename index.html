@@ -1,34 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Cloud Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roberto A. Cardenas – Cloud Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 2rem; }
-    h1 { color: #007acc; }
-    a { color: #007acc; text-decoration: none; }
-    .project { margin-bottom: 2rem; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #58a6ff;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 0.5rem;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .project {
+      margin-bottom: 2rem;
+    }
+    .project h2 {
+      margin: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
   </style>
 </head>
 <body>
-  <h1>Roberto A. Cardenas – Cloud Portfolio</h1>
-  <p>Welcome! Below are some of my cloud engineering projects.</p>
+  <div class="container">
+    <h1>Roberto A. Cardenas – Cloud Portfolio</h1>
+    <p>Welcome! I’m a Cloud Engineer with a background in IT and finance, focused on building real-world AWS infrastructure using Terraform and Python. Below are some of my completed projects:</p>
 
-  <div class="project">
-    <h2><a href="https://github.com/roberto-a-cardenas/aws-nginx-terraform">Project 1: Secure Nginx on AWS</a></h2>
-    <p>Provisioned a monitored Nginx server on EC2 using Terraform, IAM roles, and CloudWatch.</p>
+    <div class="project">
+      <h2><a href="https://github.com/Roberto-A-Cardenas/aws-nginx-terraform">Secure Nginx on AWS</a></h2>
+      <p>Provisioned a secure EC2 instance running Nginx, with IAM roles and detailed CloudWatch monitoring.</p>
+    </div>
+
+    <div class="project">
+      <h2><a href="https://github.com/Roberto-A-Cardenas/scalable-web-app">Scalable Web App with Load Balancer</a></h2>
+      <p>Deployed a Flask app behind an Application Load Balancer using Auto Scaling Groups and Launch Templates.</p>
+    </div>
+
+    <div class="project">
+      <h2><a href="https://github.com/Roberto-A-Cardenas/terraform-aws-vpc-ec2-monitoring">Custom VPC + CloudWatch</a></h2>
+      <p>Built a custom VPC with public/private subnets, EC2, and CloudWatch metrics/alarms using Terraform.</p>
+    </div>
+
+    <div class="project">
+      <h2><a href="https://github.com/Roberto-A-Cardenas/Rds-Flask-App">RDS-backed Flask App</a></h2>
+      <p>Connected a Flask web app to a managed PostgreSQL RDS instance with secure networking.</p>
+    </div>
+
+    <div class="project">
+      <h2><a href="https://github.com/Roberto-A-Cardenas/s3-static-site">Static Website with S3 and CloudFront</a></h2>
+      <p>Hosted a static portfolio site on S3 with CloudFront CDN, HTTPS, and public access configuration.</p>
+    </div>
+
+    <div class="project">
+      <h2><a href="https://github.com/Roberto-A-Cardenas/terraform-ec2-flask-cloudwatch">EC2 Flask + CloudWatch Logs</a></h2>
+      <p>Deployed a Flask app on EC2 and streamed logs to CloudWatch using the CloudWatch Agent and Terraform.</p>
+    </div>
+
+    <div class="project">
+      <h2><a href="https://github.com/Roberto-A-Cardenas/Multi-tier-webapp">Multi-tier Web App with RDS + ALB</a></h2>
+      <p>Full-stack deployment with Flask app, MySQL RDS, ALB, and Bastion host using Terraform modules.</p>
+    </div>
+
+    <div class="project">
+      <h2><a href="https://github.com/Roberto-A-Cardenas/terraform-ci-cd-s3-pipeline">CI/CD Pipeline for S3 Static Site</a></h2>
+      <p>Implemented GitHub Actions for automatic S3 deployment, versioning, and CloudFront invalidation.</p>
+    </div>
+
+    <div class="project">
+      <h2><a href="https://github.com/Roberto-A-Cardenas/serverless-api-lambda">Serverless API with Lambda</a></h2>
+      <p>Created a Lambda + API Gateway backend using Terraform with logging and environment variables.</p>
+    </div>
   </div>
-
-  <div class="project">
-    <h2><a href="https://github.com/roberto-a-cardenas/multi-tier-webapp">Project 2: Multi-tier Web App</a></h2>
-    <p>Deployed Flask app with RDS backend, ALB, and Bastion host — all using Terraform.</p>
-  </div>
-
-  <div class="project">
-    <h2><a href="https://github.com/roberto-a-cardenas/terraform-ci-cd-s3-pipeline">Project 3: CI/CD Pipeline for S3</a></h2>
-    <p>Built a GitHub Actions workflow for automated deployment of a static S3 website with CloudFront CDN.</p>
-  </div>
-
 </body>
 </html>
