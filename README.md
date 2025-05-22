@@ -2,7 +2,9 @@
 
 Welcome to my cloud engineering portfolio! I use AWS, Terraform, and Python to build scalable infrastructure and automate deployments.
 
-🔗 **Live Site:** [Cloud Portfolio](https://roberto-a-cardenas.github.io/Cloud-Portfolio/)
+🔗 **Live Site:** [Cloud Portfolio (GitHub Pages)](https://roberto-a-cardenas.github.io/Cloud-Portfolio/)
+
+---
 
 ## 🚀 Featured Projects
 
@@ -20,5 +22,12 @@ Welcome to my cloud engineering portfolio! I use AWS, Terraform, and Python to b
 
 ---
 
-📘 Check out my [About Me](https://roberto-a-cardenas.github.io/Cloud-Portfolio/about.html) and [Contact](https://roberto-a-cardenas.github.io/Cloud-Portfolio/contact.html) pages to connect!
+## 📁 Pages
 
+- [🔹 Home (Live)](https://roberto-a-cardenas.github.io/Cloud-Portfolio/)
+- [🔹 About](https://roberto-a-cardenas.github.io/Cloud-Portfolio/about.html)
+- [🔹 Contact](https://roberto-a-cardenas.github.io/Cloud-Portfolio/contact.html)
+
+---
+
+📫 Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/roberto-cardenas-940a8194/) or [GitHub](https://github.com/Roberto-A-Cardenas)
