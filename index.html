@@ -4,104 +4,63 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Roberto A. Cardenas – Cloud Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #0d1117;
-      color: #c9d1d9;
-      padding: 2rem;
-    }
-
-    h1 {
-      color: #58a6ff;
-      font-size: 2em;
-      margin-bottom: 0.5rem;
-    }
-
-    a {
-      color: #58a6ff;
-      text-decoration: none;
-      margin-right: 1rem;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .project {
-      margin-bottom: 1.75rem;
-    }
-
-    .project h2 {
-      margin: 0;
-      font-size: 1.3rem;
-    }
-
-    .container {
-      max-width: 850px;
-      margin: auto;
-    }
-
-    .description {
-      margin-top: 0.2rem;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
-    <h1>Roberto A. Cardenas – Cloud Portfolio</h1>
+<body class="bg-dark text-light">
+  <div class="container py-5">
+    <h1 class="text-primary mb-3">Roberto A. Cardenas – Cloud Portfolio</h1>
 
-    <p>
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="contact.html">Contact</a>
-    </p>
+    <nav class="mb-4">
+      <a href="index.html" class="text-info me-3">Home</a>
+      <a href="about.html" class="text-info me-3">About</a>
+      <a href="contact.html" class="text-info">Contact</a>
+    </nav>
 
-    <p>Welcome! Below are some of my completed cloud engineering projects using AWS and Terraform.</p>
+    <p class="mb-4">Welcome! Below are some of my completed cloud engineering projects using AWS and Terraform.</p>
 
-    <div class="project">
-      <h2><a href="https://github.com/Roberto-A-Cardenas/aws-nginx-terraform">Secure Nginx on AWS</a></h2>
-      <p class="description">Provisioned an EC2 instance with Nginx, IAM roles, and CloudWatch metrics/alarms using Terraform.</p>
+    <div class="mb-4">
+      <h4><a class="text-warning" href="https://github.com/Roberto-A-Cardenas/aws-nginx-terraform">Secure Nginx on AWS</a></h4>
+      <p>Provisioned EC2 with Nginx, IAM, and CloudWatch using Terraform.</p>
     </div>
 
-    <div class="project">
-      <h2><a href="https://github.com/Roberto-A-Cardenas/scalable-web-app">Scalable Web App with Load Balancer</a></h2>
-      <p class="description">Deployed a Flask app using Auto Scaling Groups, Application Load Balancer, and Launch Templates.</p>
+    <div class="mb-4">
+      <h4><a class="text-warning" href="https://github.com/Roberto-A-Cardenas/scalable-web-app">Scalable Web App</a></h4>
+      <p>Flask app with Load Balancer and Auto Scaling Groups.</p>
     </div>
 
-    <div class="project">
-      <h2><a href="https://github.com/Roberto-A-Cardenas/terraform-aws-vpc-ec2-monitoring">Custom VPC + Monitoring</a></h2>
-      <p class="description">Built a custom VPC with public/private subnets, EC2 instance, and CloudWatch monitoring with alarms.</p>
+    <div class="mb-4">
+      <h4><a class="text-warning" href="https://github.com/Roberto-A-Cardenas/terraform-aws-vpc-ec2-monitoring">Custom VPC + Monitoring</a></h4>
+      <p>Built VPC with subnets, EC2 instance, and CloudWatch alarms.</p>
     </div>
 
-    <div class="project">
-      <h2><a href="https://github.com/Roberto-A-Cardenas/Rds-Flask-App">Flask App with PostgreSQL RDS</a></h2>
-      <p class="description">Deployed a Python Flask web app that securely connects to a PostgreSQL RDS backend in a VPC.</p>
+    <div class="mb-4">
+      <h4><a class="text-warning" href="https://github.com/Roberto-A-Cardenas/Rds-Flask-App">Flask App with PostgreSQL RDS</a></h4>
+      <p>Securely connects a Python Flask app to a PostgreSQL RDS backend.</p>
     </div>
 
-    <div class="project">
-      <h2><a href="https://github.com/Roberto-A-Cardenas/s3-static-site">Static Site on S3 with CloudFront</a></h2>
-      <p class="description">Hosted a static website on S3 with CloudFront CDN, HTTPS, and public access configuration.</p>
+    <div class="mb-4">
+      <h4><a class="text-warning" href="https://github.com/Roberto-A-Cardenas/s3-static-site">Static Site on S3 with CloudFront</a></h4>
+      <p>Hosted static portfolio site with CDN, HTTPS, and S3.</p>
     </div>
 
-    <div class="project">
-      <h2><a href="https://github.com/Roberto-A-Cardenas/terraform-ec2-flask-cloudwatch">EC2 Flask + CloudWatch Logs</a></h2>
-      <p class="description">Deployed a Flask app on EC2 with CloudWatch log integration using the CloudWatch Agent and Terraform.</p>
+    <div class="mb-4">
+      <h4><a class="text-warning" href="https://github.com/Roberto-A-Cardenas/terraform-ec2-flask-cloudwatch">EC2 Flask + CloudWatch Logs</a></h4>
+      <p>Deployed a Flask app on EC2 with log streaming via CloudWatch Agent.</p>
     </div>
 
-    <div class="project">
-      <h2><a href="https://github.com/Roberto-A-Cardenas/Multi-tier-webapp">Multi-tier Web App with RDS + ALB</a></h2>
-      <p class="description">Built a full-stack Flask application with MySQL RDS backend, ALB, Bastion host, and secure VPC networking.</p>
+    <div class="mb-4">
+      <h4><a class="text-warning" href="https://github.com/Roberto-A-Cardenas/Multi-tier-webapp">Multi-tier Web App</a></h4>
+      <p>Built full-stack architecture with Flask, MySQL RDS, ALB, and Bastion host.</p>
     </div>
 
-    <div class="project">
-      <h2><a href="https://github.com/Roberto-A-Cardenas/terraform-ci-cd-s3-pipeline">CI/CD Pipeline for S3 Static Site</a></h2>
-      <p class="description">Implemented a GitHub Actions CI/CD pipeline for deploying and versioning a static S3 site with CloudFront.</p>
+    <div class="mb-4">
+      <h4><a class="text-warning" href="https://github.com/Roberto-A-Cardenas/terraform-ci-cd-s3-pipeline">CI/CD Pipeline for S3</a></h4>
+      <p>GitHub Actions workflow for automated deployment of S3 website.</p>
     </div>
 
-    <div class="project">
-      <h2><a href="https://github.com/Roberto-A-Cardenas/serverless-api-lambda">Serverless API with Lambda</a></h2>
-      <p class="description">Created a serverless API using AWS Lambda and API Gateway, with logging, permissions, and environment setup via Terraform.</p>
+    <div class="mb-4">
+      <h4><a class="text-warning" href="https://github.com/Roberto-A-Cardenas/serverless-api-lambda">Serverless API with Lambda</a></h4>
+      <p>Serverless API using Lambda and API Gateway with logging and environment setup.</p>
     </div>
   </div>
 </body>
