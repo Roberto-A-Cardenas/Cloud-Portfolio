@@ -11,29 +11,37 @@
       color: #c9d1d9;
       padding: 2rem;
     }
+
     h1 {
       color: #58a6ff;
       font-size: 2em;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
+
     a {
       color: #58a6ff;
       text-decoration: none;
+      margin-right: 1rem;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     .project {
       margin-bottom: 1.75rem;
     }
+
     .project h2 {
       margin: 0;
       font-size: 1.3rem;
     }
+
     .container {
       max-width: 850px;
       margin: auto;
     }
+
     .description {
       margin-top: 0.2rem;
     }
@@ -42,7 +50,13 @@
 <body>
   <div class="container">
     <h1>Roberto A. Cardenas – Cloud Portfolio</h1>
-    <p><a href="about.html">About</a> | <a href="contact.html">Contact</a></p>
+
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a>
+    </p>
+
     <p>Welcome! Below are some of my completed cloud engineering projects using AWS and Terraform.</p>
 
     <div class="project">
@@ -89,7 +103,6 @@
       <h2><a href="https://github.com/Roberto-A-Cardenas/serverless-api-lambda">Serverless API with Lambda</a></h2>
       <p class="description">Created a serverless API using AWS Lambda and API Gateway, with logging, permissions, and environment setup via Terraform.</p>
     </div>
-
   </div>
 </body>
 </html>
