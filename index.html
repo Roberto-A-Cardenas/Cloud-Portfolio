@@ -4,139 +4,155 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Roberto A. Cardenas – Cloud Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 </head>
 <body class="bg-dark text-light">
 
-  <!-- ✅ Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary">
-    <div class="container">
-      <a class="navbar-brand text-primary" href="index.html">R.A. Cardenas</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link text-info" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-info" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link text-info" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link text-info" href="https://github.com/Roberto-A-Cardenas/Cloud-Portfolio" target="_blank">GitHub</a></li>
-          <li class="nav-item"><a class="nav-link text-info" href="https://github.com/Roberto-A-Cardenas/Cloud-Portfolio/blob/main/README.md" target="_blank">README</a></li>
-          <li class="nav-item"><a class="btn btn-sm btn-outline-info ms-2" href="resume.pdf" target="_blank"><i class="bi bi-download"></i> Resume</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ✅ Main Content -->
-  <div class="container py-5">
-    <h1 class="text-primary mb-4">Cloud Portfolio</h1>
-    <p class="mb-4">Welcome! Below are some of my completed cloud engineering projects using AWS, Terraform, and CI/CD pipelines.</p>
-
-    <div class="mb-4">
-      <h4><a class="text-warning" href="https://github.com/Roberto-A-Cardenas/aws-nginx-terraform">Secure Nginx on AWS</a></h4>
-      <p>Provisioned EC2 with Nginx, IAM, and CloudWatch using Terraform.</p>
-    </div>
-
-    <div class="mb-4">
-      <h4><a class="text-warning" href="https://github.com/Roberto-A-Cardenas/scalable-web-app">Scalable Web App</a></h4>
-      <p>Flask app with Load Balancer and Auto Scaling Groups.</p>
-    </div>
-  <div class="col">
-    <div class="card bg-secondary text-light h-100 border-info shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">
-          <a href="https://github.com/Roberto-A-Cardenas/terraform-aws-vpc-ec2-monitoring" class="text-warning">Custom VPC + Monitoring</a>
-        </h5>
-        <p class="card-text">Built VPC with subnets, EC2 instance, and CloudWatch alarms.</p>
-      </div>
+<!-- ✅ Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary">
+  <div class="container">
+    <a class="navbar-brand text-primary" href="index.html">R.A. Cardenas</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-info" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-info" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-info" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-info" href="https://github.com/Roberto-A-Cardenas/Cloud-Portfolio" target="_blank">GitHub</a></li>
+        <li class="nav-item"><a class="nav-link text-info" href="https://github.com/Roberto-A-Cardenas/Cloud-Portfolio/blob/main/README.md" target="_blank">README</a></li>
+        <li class="nav-item">
+          <a class="btn btn-sm btn-outline-info ms-2" href="resume.pdf" target="_blank">
+            <i class="bi bi-download"></i> Resume
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
+</nav>
 
-  <div class="col">
-    <div class="card bg-secondary text-light h-100 border-info shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">
-          <a href="https://github.com/Roberto-A-Cardenas/Rds-Flask-App" class="text-warning">Flask App with PostgreSQL RDS</a>
-        </h5>
-        <p class="card-text">Securely connects a Python Flask app to a PostgreSQL RDS backend.</p>
+<!-- ✅ Main Content -->
+<div class="container py-5">
+  <h1 class="text-primary mb-4">Cloud Portfolio</h1>
+  <p class="mb-5">Welcome! Below are some of my completed cloud engineering projects using AWS, Terraform, and CI/CD pipelines.</p>
+
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+
+    <!-- PROJECT CARD TEMPLATE -->
+    <div class="col">
+      <div class="card bg-dark border-info h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-warning">
+            <a href="https://github.com/Roberto-A-Cardenas/aws-nginx-terraform" class="text-warning text-decoration-none">Secure Nginx on AWS</a>
+          </h5>
+          <p class="card-text">Provisioned EC2 with Nginx, IAM, and CloudWatch using Terraform.</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="col">
-    <div class="card bg-secondary text-light h-100 border-info shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">
-          <a href="https://github.com/Roberto-A-Cardenas/s3-static-site" class="text-warning">Static Site on S3 with CloudFront</a>
-        </h5>
-        <p class="card-text">Hosted a static site with CDN, HTTPS, and S3 public access config.</p>
+    <div class="col">
+      <div class="card bg-dark border-info h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-warning">
+            <a href="https://github.com/Roberto-A-Cardenas/scalable-web-app" class="text-warning text-decoration-none">Scalable Web App</a>
+          </h5>
+          <p class="card-text">Flask app with Load Balancer and Auto Scaling Groups.</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="col">
-    <div class="card bg-secondary text-light h-100 border-info shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">
-          <a href="https://github.com/Roberto-A-Cardenas/terraform-ec2-flask-cloudwatch" class="text-warning">EC2 Flask + CloudWatch Logs</a>
-        </h5>
-        <p class="card-text">Deployed a Flask app on EC2 with log streaming via CloudWatch Agent.</p>
+    <div class="col">
+      <div class="card bg-dark border-info h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-warning">
+            <a href="https://github.com/Roberto-A-Cardenas/terraform-aws-vpc-ec2-monitoring" class="text-warning text-decoration-none">Custom VPC + Monitoring</a>
+          </h5>
+          <p class="card-text">Built VPC with subnets, EC2 instance, and CloudWatch alarms.</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="col">
-    <div class="card bg-secondary text-light h-100 border-info shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">
-          <a href="https://github.com/Roberto-A-Cardenas/Multi-tier-webapp" class="text-warning">Multi-tier Web App</a>
-        </h5>
-        <p class="card-text">Full-stack app with Flask, MySQL RDS, ALB, Bastion, and secure VPC.</p>
+    <div class="col">
+      <div class="card bg-dark border-info h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-warning">
+            <a href="https://github.com/Roberto-A-Cardenas/Rds-Flask-App" class="text-warning text-decoration-none">Flask App with PostgreSQL RDS</a>
+          </h5>
+          <p class="card-text">Securely connects a Python Flask app to a PostgreSQL RDS backend.</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="col">
-    <div class="card bg-secondary text-light h-100 border-info shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">
-          <a href="https://github.com/Roberto-A-Cardenas/terraform-ci-cd-s3-pipeline" class="text-warning">CI/CD Pipeline for S3</a>
-        </h5>
-        <p class="card-text">GitHub Actions pipeline for automated deployment of a static S3 site.</p>
+    <div class="col">
+      <div class="card bg-dark border-info h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-warning">
+            <a href="https://github.com/Roberto-A-Cardenas/s3-static-site" class="text-warning text-decoration-none">Static Site on S3 with CloudFront</a>
+          </h5>
+          <p class="card-text">Hosted static portfolio site with CDN, HTTPS, and S3 public config.</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="col">
-    <div class="card bg-secondary text-light h-100 border-info shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title">
-          <a href="https://github.com/Roberto-A-Cardenas/serverless-api-lambda" class="text-warning">Serverless API with Lambda</a>
-        </h5>
-        <p class="card-text">Built a serverless API using Lambda, API Gateway, logging, and env vars via Terraform.</p>
+    <div class="col">
+      <div class="card bg-dark border-info h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-warning">
+            <a href="https://github.com/Roberto-A-Cardenas/terraform-ec2-flask-cloudwatch" class="text-warning text-decoration-none">EC2 Flask + CloudWatch Logs</a>
+          </h5>
+          <p class="card-text">Flask app on EC2 with log streaming via CloudWatch Agent.</p>
+        </div>
       </div>
     </div>
-  </div>
-    <!-- Add the remaining projects here in same format -->
 
-  </div>
-
-  <!-- ✅ Footer -->
-  <footer class="bg-black text-center text-secondary py-4 mt-5 border-top border-secondary">
-    <div class="container">
-      <small>&copy; 2025 Roberto A. Cardenas &middot;
-        <a href="https://github.com/Roberto-A-Cardenas" class="text-info">GitHub</a>
-        &middot;
-        <a href="https://www.linkedin.com/in/roberto-cardenas-940a8194/" class="text-info" target="_blank">LinkedIn</a>
-      </small>
+    <div class="col">
+      <div class="card bg-dark border-info h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-warning">
+            <a href="https://github.com/Roberto-A-Cardenas/Multi-tier-webapp" class="text-warning text-decoration-none">Multi-tier Web App</a>
+          </h5>
+          <p class="card-text">Flask + MySQL RDS + ALB + Bastion + Secure VPC via Terraform.</p>
+        </div>
+      </div>
     </div>
-  </footer>
 
-  <!-- ✅ Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="col">
+      <div class="card bg-dark border-info h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-warning">
+            <a href="https://github.com/Roberto-A-Cardenas/terraform-ci-cd-s3-pipeline" class="text-warning text-decoration-none">CI/CD Pipeline for S3</a>
+          </h5>
+          <p class="card-text">GitHub Actions CI/CD for static S3 site with CloudFront invalidation.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card bg-dark border-info h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-warning">
+            <a href="https://github.com/Roberto-A-Cardenas/serverless-api-lambda" class="text-warning text-decoration-none">Serverless API with Lambda</a>
+          </h5>
+          <p class="card-text">Built API with Lambda, API Gateway, logging, and env vars via Terraform.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ✅ Footer -->
+<footer class="bg-black text-center text-secondary py-4 mt-5 border-top border-secondary">
+  <div class="container">
+    <small>&copy; 2025 Roberto A. Cardenas &middot;
+      <a href="https://github.com/Roberto-A-Cardenas" class="text-info">GitHub</a> &middot;
+      <a href="https://www.linkedin.com/in/roberto-cardenas-940a8194/" class="text-info" target="_blank">LinkedIn</a>
+    </small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
